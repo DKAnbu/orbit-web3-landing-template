@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORBIT — Decentralized Compute Network | Web3 Landing Template</title>
+  <meta name="description" content="A premium, dependency-free landing page template for Web3 and crypto projects. Hero, tokenomics, roadmap, staking calculator, FAQ — ready to deploy." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%237c5cff'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffffff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="ORBIT home">
+        <span class="brand-mark" aria-hidden="true">◉</span>
+        <span class="brand-name">ORBIT</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#calculator">Staking</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light and dark mode" title="Toggle theme">☾</button>
+        <a class="btn btn-ghost" href="#calculator">Docs</a>
+        <a class="btn btn-primary" href="#cta">Launch App</a>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Mainnet is live · v2.4 shipped</p>
+        <h1>Compute power,<br />owned by <span class="gradient-text">everyone.</span></h1>
+        <p class="lead">ORBIT is a decentralized GPU network for AI workloads. Rent idle compute in seconds, earn rewards for sharing yours — no middlemen, no lock-in.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#cta">Start building →</a>
+          <a class="btn btn-ghost btn-lg" href="#tokenomics">Read the tokenomics</a>
+        </div>
+        <div class="contract-row">
+          <code id="contractAddr">0x7a3f9c21B4e8D05a6C19F2b47E0d83A5C91b4E6D2</code>
+          <button class="btn btn-small" id="copyBtn" type="button">Copy address</button>
+          <span class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></span>
+        </div>
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>GPUs online</dt>
+            <dd><span class="count" data-target="12847">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Jobs completed</dt>
+            <dd><span class="count" data-target="942031">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Stakers</dt>
+            <dd><span class="count" data-target="31208">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Uptime</dt>
+            <dd>99.98%</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CHAINS STRIP ============ -->
+    <section class="chains" aria-label="Supported networks">
+      <div class="container chains-inner">
+        <span class="chains-label">Multi-chain from day one</span>
+        <ul class="chain-list">
+          <li>Ethereum</li>
+          <li>Solana</li>
+          <li>Base</li>
+          <li>Arbitrum</li>
+          <li>BNB Chain</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <p class="section-eyebrow">Why ORBIT</p>
+        <h2>Built for builders, priced for everyone</h2>
+        <p class="section-lead">Everything a compute network needs — without the cloud bill.</p>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Rent in seconds</h3>
+            <p>Spin up GPU capacity with one transaction. Pay per second, stop anytime — no reservations, no minimums.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🛡️</div>
+            <h3>Verified hardware</h3>
+            <p>Every node is attested on-chain before it earns a single reward. Fake capacity is slashed automatically.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">💰</div>
+            <h3>Earn while idle</h3>
+            <p>Share your GPU when you are not using it. Rewards settle in ORB every epoch — transparent, on-chain.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🔒</div>
+            <h3>Private by default</h3>
+            <p>Workloads run in confidential containers. Your models and data never touch a central server.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🧩</div>
+            <h3>SDKs that fit</h3>
+            <p>First-class SDKs for Python, TypeScript and Rust, plus a REST API that mirrors the on-chain state.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">🌍</div>
+            <h3>Community governed</h3>
+            <p>Fees, emissions and upgrades are decided by ORB holders. Proposals execute on-chain — no backroom deals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOKENOMICS ============ -->
+    <section class="section section-alt" id="tokenomics">
+      <div class="container">
+        <p class="section-eyebrow">Tokenomics</p>
+        <h2>One token, clear rules</h2>
+        <p class="section-lead">Fixed supply of 1,000,000,000 ORB. No hidden mint, no team unlock surprises.</p>
+        <div class="tokenomics-grid">
+          <div class="donut-wrap">
+            <svg class="donut" viewBox="0 0 200 200" role="img" aria-label="Token allocation chart: community rewards 40 percent, ecosystem fund 25 percent, team 15 percent, investors 12 percent, liquidity 8 percent">
+              <circle class="donut-bg" cx="100" cy="100" r="80" />
+              <circle class="donut-seg seg-community" cx="100" cy="100" r="80" />
+              <circle class="donut-seg seg-ecosystem" cx="100" cy="100" r="80" />
+              <circle class="donut-seg seg-team" cx="100" cy="100" r="80" />
+              <circle class="donut-seg seg-investors" cx="100" cy="100" r="80" />
+              <circle class="donut-seg seg-liquidity" cx="100" cy="100" r="80" />
+            </svg>
+            <div class="donut-center">
+              <strong>1B</strong>
+              <span>ORB supply</span>
+            </div>
+          </div>
+          <ul class="alloc-list">
+            <li>
+              <button type="button" class="alloc-item" data-alloc="community">
+                <span class="alloc-dot dot-community" aria-hidden="true"></span>
+                <span class="alloc-name">Community rewards</span>
+                <span class="alloc-pct">40%</span>
+              </button>
+              <span class="alloc-bar"><span class="alloc-fill fill-community" style="width:40%"></span></span>
+            </li>
+            <li>
+              <button type="button" class="alloc-item" data-alloc="ecosystem">
+                <span class="alloc-dot dot-ecosystem" aria-hidden="true"></span>
+                <span class="alloc-name">Ecosystem fund</span>
+                <span class="alloc-pct">25%</span>
+              </button>
+              <span class="alloc-bar"><span class="alloc-fill fill-ecosystem" style="width:25%"></span></span>
+            </li>
+            <li>
+              <button type="button" class="alloc-item" data-alloc="team">
+                <span class="alloc-dot dot-team" aria-hidden="true"></span>
+                <span class="alloc-name">Team · 4-yr vest</span>
+                <span class="alloc-pct">15%</span>
+              </button>
+              <span class="alloc-bar"><span class="alloc-fill fill-team" style="width:15%"></span></span>
+            </li>
+            <li>
+              <button type="button" class="alloc-item" data-alloc="investors">
+                <span class="alloc-dot dot-investors" aria-hidden="true"></span>
+                <span class="alloc-name">Investors · 2-yr vest</span>
+                <span class="alloc-pct">12%</span>
+              </button>
+              <span class="alloc-bar"><span class="alloc-fill fill-investors" style="width:12%"></span></span>
+            </li>
+            <li>
+              <button type="button" class="alloc-item" data-alloc="liquidity">
+                <span class="alloc-dot dot-liquidity" aria-hidden="true"></span>
+                <span class="alloc-name">Liquidity</span>
+                <span class="alloc-pct">8%</span>
+              </button>
+              <span class="alloc-bar"><span class="alloc-fill fill-liquidity" style="width:8%"></span></span>
+            </li>
+          </ul>
+        </div>
+        <p class="alloc-note" id="allocNote" role="status" aria-live="polite">Click an allocation to see its details.</p>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <p class="section-eyebrow">Roadmap</p>
+        <h2>Shipped, shipping, next</h2>
+        <p class="section-lead">Public milestones with dates — no vaporware quarters.</p>
+        <ol class="timeline">
+          <li class="timeline-item done reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <p class="timeline-date">Q1 2026 · Done</p>
+              <h3>Testnet launch</h3>
+              <p>2,400 GPUs, first rental marketplace, on-chain attestation live.</p>
+            </div>
+          </li>
+          <li class="timeline-item done reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <p class="timeline-date">Q2 2026 · Done</p>
+              <h3>Mainnet + ORB token</h3>
+              <p>Token generation event, staking v1, Python + TypeScript SDKs.</p>
+            </div>
+          </li>
+          <li class="timeline-item current reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <p class="timeline-date">Q3 2026 · In progress</p>
+              <h3>Confidential compute</h3>
+              <p>TEE-backed containers, private model hosting, audit in progress.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <p class="timeline-date">Q4 2026 · Next</p>
+              <h3>Governance v2</h3>
+              <p>On-chain proposals, quadratic voting, treasury dashboard.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ STAKING CALCULATOR ============ -->
+    <section class="section section-alt" id="calculator">
+      <div class="container">
+        <p class="section-eyebrow">Staking calculator</p>
+        <h2>Estimate your rewards</h2>
+        <p class="section-lead">Illustrative only — based on the current network APR of 12.4%. Not financial advice.</p>
+        <div class="calc-card">
+          <div class="calc-controls">
+            <label for="stakeAmount">Amount staked (ORB)</label>
+            <input type="range" id="stakeAmount" min="100" max="100000" step="100" value="10000" />
+            <p class="calc-value"><output id="stakeOutput" for="stakeAmount">10,000 ORB</output></p>
+            <label for="stakeMonths">Lock period (months)</label>
+            <input type="range" id="stakeMonths" min="1" max="24" step="1" value="12" />
+            <p class="calc-value"><output id="monthsOutput" for="stakeMonths">12 months</output></p>
+          </div>
+          <div class="calc-results" aria-live="polite">
+            <div class="calc-result">
+              <span>Estimated rewards</span>
+              <strong id="rewardResult">1,240 ORB</strong>
+            </div>
+            <div class="calc-result">
+              <span>Effective APR</span>
+              <strong id="aprResult">12.40%</strong>
+            </div>
+            <div class="calc-result">
+              <span>Total at unlock</span>
+              <strong id="totalResult">11,240 ORB</strong>
+            </div>
+            <p class="calc-note">Longer locks earn a boost: +0.15% APR per extra month, capped at +3.0%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <p class="section-eyebrow">FAQ</p>
+        <h2>Questions, answered</h2>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Do I need to own a GPU to use ORBIT?</summary>
+            <p>No. Renters only need a wallet and ORB (or any supported stablecoin, converted on the fly). Owning a GPU is only required if you want to earn as a provider.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How are providers verified?</summary>
+            <p>Each node runs an attestation check that proves its hardware and software stack, recorded on-chain. Nodes that fail attestation or go offline during a job are slashed.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What happens if a job fails mid-run?</summary>
+            <p>The job is automatically re-routed to another node at no extra cost, and the failed provider's stake is partially slashed to compensate the renter.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is there a minimum stake?</summary>
+            <p>Staking starts at 100 ORB. Governance voting requires at least 1,000 ORB at snapshot time.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where can I buy ORB?</summary>
+            <p>ORB trades on major decentralized exchanges on Ethereum and Base. Always verify the contract address shown at the top of this page.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <h2>Ready to compute without the cloud?</h2>
+          <p>Deploy your first job in under two minutes. No credit card, no account — just a wallet.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#top">Launch App →</a>
+            <a class="btn btn-ghost btn-lg" href="#faq">Talk to the team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◉</span><span class="brand-name">ORBIT</span></a>
+        <p>Decentralized compute for the AI era.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <div>
+          <h3>Product</h3>
+          <a href="#features">Features</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#calculator">Staking</a>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <a href="#faq">FAQ</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#top">Docs</a>
+        </div>
+        <div>
+          <h3>Community</h3>
+          <a href="#top">X / Twitter</a>
+          <a href="#top">Discord</a>
+          <a href="#top">GitHub</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ORBIT Labs. Demo content — replace with your own project details.</p>
+      <p><a href="#top">Privacy</a> · <a href="#top">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
